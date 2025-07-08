@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Detaching Neighboring Meshes</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+    }
+
+    #container {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .case-heading {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .case-heading .slider {
+      width: 200px;
+    }
+
+    .subplot-label {
+      position: absolute;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.8);
+      padding: 3px 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+      pointer-events: none;
+    }
+
+    canvas {
+      display: block;
+      max-width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="container"></div>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
